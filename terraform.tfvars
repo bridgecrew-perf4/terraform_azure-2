@@ -1,0 +1,6 @@
+web_server_location      = "westeurope"
+web_server_rg            = "web_rg"
+resource_prefix          = "web_server"
+web_server_address_space = "10.0.0.0/22"
+web_server_subnet        = "10.0.1.0/24"
+web_server_name          = "srv-01"
