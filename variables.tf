@@ -21,3 +21,7 @@ variable "web_server_subnet" {
 variable "web_server_name" {
   type = string
 }
+
+variable "env" {
+  type = string
+}

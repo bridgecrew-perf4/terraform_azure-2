@@ -40,5 +40,7 @@ resource "azurerm_public_ip" "web_server_public_ip" {
   name                 = "${var.resource_prefix}-public-ip"
   location             = var.web_server_location
   resource_group_name  = azurerm_resource_group.web-rg.name
-  allocation_method    = "Dynamic"
+# If env variable set to production, allocation method will be Static, otherwide Dynamic
+  allocation_method    = var.env == "production" ? "Static" : "Dynamic"
 }
+
