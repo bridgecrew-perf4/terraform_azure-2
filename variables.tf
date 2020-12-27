@@ -21,7 +21,3 @@ variable "web_server_subnet" {
 variable "web_server_name" {
   type = string
 }
-
-variable "test" {
-  
-}
